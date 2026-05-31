@@ -20,9 +20,9 @@ pnpm tsc --init
 
 echo 'console.log("Hello World")' > src/index.ts
 
-npm pkg set scripts.dev="tsx watch src/index.ts"
-npm pkg set scripts.build="tsc"
-npm pkg set scripts.start="node dist/index.js"
+pnpm pkg set scripts.dev="tsx watch src/index.ts"
+pnpm pkg set scripts.build="tsc"
+pnpm pkg set scripts.start="node dist/index.js"
 
 cat > tsconfig.json <<'EOF'
 {
